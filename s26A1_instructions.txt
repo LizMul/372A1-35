@@ -1,5 +1,3 @@
-Assignment.1 (Group) - TCP client-server application
-CP372 – Computer Network, Spring 2026
 
 Assignment Overview
 In this assignment, students will design and implement a TCP-based client-server application using Python Socket API. The goal is to gain practical experience with inter-process communication, socket programming, and the TCP/IP protocol stack.
@@ -169,48 +167,5 @@ The demonstration must show:
 	•	Graceful disconnection
 
 
-Submission Instructions
-Compress all files into a single ZIP archive.
-Naming format:
-Group#_Assignment.1.zip
-Submit through the course MLS before the deadline.
-
-Evaluation Rubric
-Component
-Marks
-TCP socket connection setup
-10
-Client-server communication
-10
-Protocol design and implementation
-20
-Message transfer functionality
-10
-File transfer implementation
-20
-Error handling and robustness
-10
-Documentation quality
-10
-Code organization and readability
-10
-Total
-100
-
-
-Academic Integrity
-Students must develop their own implementation.
-Sharing code with others is prohibited.
-External resources may be used for learning purposes but must be cited appropriately.
-
-Suggested Testing Scenarios
-Students are encouraged to test:
-	•	Small and large files
-	•	Invalid commands
-	•	Server disconnects
-	•	Missing files
-	•	Empty messages
-	•	Binary file transfer
-	•	Reconnection after disconnect
 
 
