@@ -12,9 +12,14 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         if not line: continue
         if line.upper().startswith('FILE '):
             path = line.split(' ', 1)[1]
+            if not os.path.exists(path):
+                print(f'ERROR: file not found: {path}')
+                continue
             try:
                 with open(path, 'rb') as fp: blob = fp.read()
-            except: continue
+            except:
+                print(f'ERROR: could not read file: {path}')
+                continue
             name = os.path.basename(path)
             header = f'FILE {name} {len(blob)}\n'.encode()
             f.write(header + blob)
